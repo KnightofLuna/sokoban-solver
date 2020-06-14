@@ -11,7 +11,7 @@ This project proposed a AI solver for sokoban (japanese for warehouse keeper) wh
 <a id="0"></a>
 ## 0. 使用方法
 
-1. 需要导入的库有：sys，collections，numpy，heapq，time
+1. 需要导入的库有：`sys`，`collections`，`numpy`，`heapq`，`time`。
 
 2. 下载到本地后运行`sokoban.py`文件即可。
 
@@ -247,5 +247,8 @@ RurrdLLLrrrdddlDRlLdllUUdRRurruuulldRDrddL
 Runtime of astar: 0.85 second.
 ```
 
-表现最好的是A*。
+表现最好的是A*。BFS、UCS和A*输出的推箱者动作一致，DFS虽然也能找到解决方式但会出现逛该现象，显然其他方法会让结果更简单一些。后续可以提升的方面有：
 
+* 定义更简单的SSG
+* 更加全面的dead pattern
+* 更加适合的cost function和heuristic function
